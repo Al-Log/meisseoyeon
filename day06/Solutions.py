@@ -1,7 +1,5 @@
-def solution(num):
-    answer = ''
-    if num %2==0:
-        answer='Even'
-    elif num%2==1:
-        answer='Odd'
+def solution(x, n):
+    answer = []
+    for i in range(1,n+1):
+        answer.append(x*i)
     return answer

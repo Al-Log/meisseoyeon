@@ -1,7 +1,9 @@
-def solution(num):
-    answer = ''
-    if num %2==0:
-        answer='Even'
-    elif num%2==1:
-        answer='Odd'
+def solution(arr):
+    answer = 0
+    sum=0
+    for i in arr:
+        sum +=i
+        answer= sum/len(arr)
+        
+        
     return answer

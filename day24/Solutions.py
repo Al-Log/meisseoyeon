@@ -1,8 +1,13 @@
-def solution(n):
-    answer = ''
-    for i in range(0,n):
-        if i%2==0:
-            answer+="수"
-        elif i%2==1:
-            answer+="박"
-    return answer
+def solution(left, right):
+    answer = 0
+    for i in range(left, right+1):
+        new_count = 0
+        for j in range(1,i+1):
+            if i % j == 0:
+                new_count += 1;
+                
+        if new_count % 2 == 0:
+            answer += i
+        else:
+            answer -= i 
+    return answer 

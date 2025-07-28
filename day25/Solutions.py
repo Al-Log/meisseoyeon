@@ -1,8 +1,2 @@
-def solution(n):
-    answer = ''
-    for i in range(0,n):
-        if i%2==0:
-            answer+="수"
-        elif i%2==1:
-            answer+="박"
-    return answer
+def solution(s):
+    return ''.join(sorted(s, reverse=True))

@@ -1,29 +1,29 @@
 ## 📘 문제 이름
 
-내적
+수박수박수박수?
 
 - 🧩 난이도: level 1
 - 🛠 사용 언어: Python
-- [문제링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128#)
+- [문제링크](https://school.programmers.co.kr/learn/courses/30/lessons/12922#)
 
 ---
 
 ### 🧠 문제 설명
 
-가운데 글자를 반환
+n이 4이면 "수박수박"을 리턴하고 3이라면 "수박수"를 리턴
 
 --- 내적은 a[0]*b[0] + a[1]*b[1] + ... + a[n-1]\*b[n-1]
 
 ### 💡 아이디어
 
-- 곱한것의 합
+- 짝수이면 수 홀수이면 박을 리턴
 
 ---
 
 ### 배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
 
----
+---range(0,n): 0부터 n-1까지 돌린다.
 
 ### 다른 사람의 풀이
 
-`return sum([x*y for x, y in zip(a,b)])`
+`str = "수박"*n return str[:n]`

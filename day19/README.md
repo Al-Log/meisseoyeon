@@ -1,22 +1,23 @@
 ## 📘 문제 이름
 
-콜라츠 추축
+핸드폰 번호 가리기
 
 - 🧩 난이도: level 1
 - 🛠 사용 언어: Python
-- [문제링크](https://school.programmers.co.kr/learn/courses/30/lessons/12943)
+- [문제링크](https://school.programmers.co.kr/learn/courses/30/lessons/12948)
 
 ### 🧠 문제 설명
 
-1-1. 입력된 수가 짝수라면 2로 나눕니다.
-1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다.
+전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 \*으로 가린 문자열을 리턴
 
 ### 💡 아이디어
 
----while문과 if문을 이용한다.
+---for문 이용하고 별이랑 문자열 합치기
 
 ### 배운 것, 느낀 점, 아직 이해되지 않은 점 (선택)
 
 ---
 
 ### 다른 사람의 풀이
+
+`return '*' * (len(phone_number)-4) + phone_number[-4:]`
